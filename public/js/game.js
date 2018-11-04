@@ -813,7 +813,7 @@ socket.on("opponentDisconnected", function (data) {
     alert("your opponent has unfortunately disconnected. you will be redirected to the main page.");
 
 
-    location.href = "http://localhost:3000";
+    location.href = "http://www.mazebattles.com/";
 });
 
 socket.on("paired", function (data) {
@@ -899,7 +899,7 @@ socket.on("winner", function (data) {
 });
 
 function quit() {
-    location.href = "http://localhost:3000";
+    location.href = "http://www.mazebattles.com/";
 }
 
 function replay() {
@@ -1013,6 +1013,6 @@ function rematchagreement(agree) {
     if (agree) {
         socket.emit("rematchagreement", [socket.id, true]);
     } else {
-        location.href = "http://localhost:3000";
+        location.href = "http://www.mazebattles.com/";
     }
 }
